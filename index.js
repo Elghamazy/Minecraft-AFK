@@ -26,7 +26,9 @@ function createBot() {
    bot.loadPlugin(pathfinder);
    const mcData = require('minecraft-data')(bot.version);
    const defaultMove = new Movements(bot, mcData);
-   bot.settings.colorsEnabled = false;
+   if (bot.settings) {
+    bot.settings.colorsEnabled = true;
+}
 
    bot.once('spawn', () => {
       console.log('[AfkBot] Bot joined to the server');
