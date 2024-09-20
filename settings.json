@@ -1,6 +1,6 @@
 {
   "bot-account": {
-    "username": "IloveFemboys",
+    "username": "FruityFemboy",
     "password": "",
     "type": "mojang"
   },
@@ -30,9 +30,9 @@
     },
 
     "chat-messages": {
-      "enabled": false,
+      "enabled": true,
       "repeat": true,
-      "repeat-delay": 60,
+      "repeat-delay": 3000,
 
       "messages": [
         "I'm a regular player",
