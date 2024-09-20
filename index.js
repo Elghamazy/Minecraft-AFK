@@ -6,11 +6,10 @@ const express = require('express');
 
 const config = require('./settings.json');
 
-// Setup express to keep Glitch alive
 const app = express();
 app.get('/', (req, res) => res.send('Bot is running!'));
 app.listen(process.env.PORT || 3000, () => {
-   console.log('Server is ready.');
+   console.log('HTTP Server is ready.');
 });
 
 function createBot() {
